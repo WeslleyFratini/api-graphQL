@@ -1,21 +1,22 @@
 {
-  "name": "api-graphql",
+  "name": "api",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/WeslleyFratini/api-graphQL.git",
+  "author": "WeslleyFratini <weeslleey354@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nodemom --exec babel-node src/index.js"
-  },
-  "devDependencies": {
+    "dev": "npx --exec babel-node src/index.js -e js.gql"
+  },"devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.14",
     "@babel/node": "^7.13.13",
-    "@babel/preset-env": "^7.13.12",
-    "nodemon": "^2.0.7"
+    "@babel/preset-env": "^7.13.12"
   },
   "dependencies": {
     "apollo-server": "^2.22.2",
     "graphql": "^15.5.0",
+    "merge-graphql-schemas": "^1.7.8",
     "mongoose": "^5.12.3"
   }
 }
